@@ -1,0 +1,12 @@
+{
+  "mashov": {
+    "username": "ID number used to log in to Mashov (תעודת זהות)",
+    "password": "your Mashov password",
+    "semel": 123456,
+    "year": 2027
+  },
+  "smartschool": {
+    "username": "your Webtop username",
+    "password": "your Webtop password"
+  }
+}
