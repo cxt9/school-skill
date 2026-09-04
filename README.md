@@ -4,6 +4,18 @@ A Claude Code skill that reads your children's school data from **Mashov** (מש
 
 Read-only. Zero dependencies. Node 20 or newer.
 
+## What you can ask
+
+Once installed, just ask Claude Code in plain language (Hebrew or English):
+
+- "What does Noa have on Tuesday?" or "מה מערכת השעות של נועה ליום שלישי?"
+- "Did any teacher send something this week? Summarize the unread messages for both kids."
+- "Save the trip permission form the homeroom teacher attached to my Downloads folder."
+- "Was Yonatan marked late or absent this month?"
+- "What was taught in math last week, and is there homework?"
+
+Claude picks the right child and platform, runs the CLI, and answers from the data. Nothing is ever sent back to the school.
+
 ## Setup
 
 1. Create the config directory and copy the example:
