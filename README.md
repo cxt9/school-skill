@@ -6,13 +6,17 @@ Read-only. Zero dependencies. Node 20 or newer.
 
 ## What you can ask
 
-Once installed, just ask Claude Code in plain language (Hebrew or English):
+Once installed, just ask Claude Code in plain language, in Hebrew or English. For example:
 
-- "What does Noa have on Tuesday?" or "מה מערכת השעות של נועה ליום שלישי?"
-- "Did any teacher send something this week? Summarize the unread messages for both kids."
-- "Save the trip permission form the homeroom teacher attached to my Downloads folder."
-- "Was Yonatan marked late or absent this month?"
-- "What was taught in math last week, and is there homework?"
+<div dir="rtl" align="right">
+<ul>
+<li>מה מערכת השעות של נועה ליום שלישי?</li>
+<li>איזה מורה שלח הודעה השבוע? תסכם לי את ההודעות שלא נקראו של שני הילדים.</li>
+<li>תשמור את אישור ההורים לטיול שהמחנכת צירפה לתיקיית ההורדות שלי.</li>
+<li>האם יונתן איחר או נעדר החודש?</li>
+<li>מה למדו במתמטיקה בשבוע שעבר, ויש שיעורי בית?</li>
+</ul>
+</div>
 
 Claude picks the right child and platform, runs the CLI, and answers from the data. Nothing is ever sent back to the school.
 
