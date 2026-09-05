@@ -43,7 +43,8 @@ Run it from this skill's directory (the directory containing this SKILL.md). Log
 - Mashov endpoints available under `students/<guid>/`: timetable, grades, homework, behave, lessons/history, files, lessonsCount, bagrut/grades, notifications. Mail: `mail/inbox/conversations?skip=0&take=20`, `mail/conversations/<id>`.
 - Smartschool: opening a message with `message` marks it as read on the site, exactly like opening it in the app. Say so if the user cares about unread state.
 - Smartschool elementary schools often expose only lesson events, out-of-class events and private hours in the student card. `grades`/`homework` answering `allowToViewThis: false` means the school disabled that module for parents, and `timetable` with an empty `lessons` list means the school never published one in Webtop (look for a PDF in messages instead).
-- Sessions are cached in `~/.config/school-skill/sessions/`. On 401/403 the CLI logs in again once. A wrong password is never retried (Smartschool shows a reCAPTCHA after two failures).
+- Config and sessions live under `~/.config/school-skill/`. In a sandboxed environment (for example Claude Cowork) where the home folder is not the user's real one, set `SCHOOL_SKILL_HOME` to a folder the user connected that contains their `config.json`, e.g. `SCHOOL_SKILL_HOME=/path/to/connected/folder/school-skill-config node scripts/school.mjs kids`. Node 20+ and outbound HTTPS to mashov.info and smartschool.co.il are required; if either is missing, say so instead of retrying.
+- Sessions are cached in `<SCHOOL_SKILL_HOME>/sessions/`. On 401/403 the CLI logs in again once. A wrong password is never retried (Smartschool shows a reCAPTCHA after two failures).
 - If Smartschool answers with a 2FA request, tell the user to check for the one-time code and run `login smartschool --otp <code>`. Never ask the user to paste the code into chat if the CLI can take it directly from them.
 
 ## Boundaries
